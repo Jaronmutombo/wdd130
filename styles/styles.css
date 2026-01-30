@@ -42,14 +42,20 @@ h1 {
 }
 
 main {
+    display: flex;
+    gap: 2rem;
+}
+/*main {
     grid-column: 2/3;
     margin: 1rem;
-}
+}*/
 
 main img {
     width: 450px;
     height: 600px;
+    border: 2px solid rgb(0 0 0 / 0.2);
     float: right;
+    padding: 4px;
 }
 
 aside {
