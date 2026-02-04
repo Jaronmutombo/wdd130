@@ -11,7 +11,7 @@ main {
 }
 
 h1 {
-    margin: 0.5rem;
+    margin: .5rem;
 }
 
 form {
@@ -22,8 +22,12 @@ form {
 input,
 textarea,
  select {
-    padding: 0,75rem;
-    min-width: 200px;
+    padding: .75rem;
+    min-width: none;
+}
+
+button {
+    background-color: navy;
 }
 
 code {
@@ -40,5 +44,5 @@ code {
 }
 
 .quiz-item {
-    border: none;
+    border: 10px;
 }
