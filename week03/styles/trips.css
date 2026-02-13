@@ -1,33 +1,60 @@
+/* ===== TRIPS PAGE ===== */
 
-/* SHARED SECTIONS */
-section {
+.trips {
   padding: 60px 10%;
+  background-color: #f7f9fb;
 }
 
-h2 {
+.trips h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #1f4d6b;
 }
 
-/* TRIPS */
-.trip-list {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+/* Grid layout */
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
+/* Card styling */
 .trip-card {
-  border: 1px solid #ddd;
-  padding: 25px;
+  background: white;
   border-radius: 10px;
-  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+/* Image control (THIS FIXES SCATTERING) */
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Text */
+.trip-card h3 {
+  margin: 15px 0 10px;
+  color: #1f4d6b;
+}
+
+.trip-card p {
+  padding: 0 15px;
+  font-size: 0.95rem;
 }
 
 .trip-card span {
   display: block;
-  margin-top: 10px;
+  margin: 15px 0 20px;
   font-weight: bold;
   color: #1f4d6b;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .trips-grid {
+    grid-template-columns: 1fr;
+  }
 }
