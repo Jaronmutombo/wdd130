@@ -1,15 +1,11 @@
-/* ---------------------------
-   RESET
----------------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ---------------------------
-   BASE STYLES
----------------------------- */
+
 body {
     font-family: var(--body-font);
     color: var(--accent-color);
@@ -20,15 +16,22 @@ img {
     display: block;
 }
 
-/* ---------------------------
-   HEADER
----------------------------- */
-header,
+
+header {
+    width: 840px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*header,
 main,
 footer {
     width: 840px;
     margin: 0 auto
-}
+}*/
 
 header img {
     width: 120px;
@@ -45,9 +48,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ---------------------------
-   HERO
----------------------------- */
+
 .hero {
     position: relative;
     height: 400px;
@@ -60,25 +61,62 @@ nav a:hover {
 
 }
 
-/* Dark overlay */
 .hero::after {
     content: "";
     position: absolute;
-    background: rgba(0, 0, 0, 0.45);
+    inset: 0;              /* fills the hero */
+    background: rgba(0,0,0,0.45);
 }
 
+/*
+.hero::after {
+    content: "";
+    position: absolute;
+    background: rgba(21, 12, 12, 0.45);
+}*/
+
 /* Hero title */
+
+
 .hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    z-index: 2;
+}
+
+
+
+/*.hero h1 {
     position: absolute;
     top: 20px;
     left: 20px;
     color: black;
     font-size: 3rem;
     z-index: 2;
-}
+}*/
 
 /* Article inside hero */
+
+
 .hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.85);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+    z-index: 2;
+}
+
+/*.hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -86,7 +124,7 @@ nav a:hover {
     padding: 1rem;
     z-index: 2;
 
-}
+}*/
 
 .hero article img {
     width: 80px;
