@@ -143,6 +143,14 @@ main h2 {
     margin-bottom: 0.5rem;
 }
 
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+
 /* ---------------------------
    FOOTER
 ---------------------------- */
