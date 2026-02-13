@@ -1,0 +1,33 @@
+
+/* SHARED SECTIONS */
+section {
+  padding: 60px 10%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f4d6b;
+}
+
+/* TRIPS */
+.trip-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.trip-card {
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.trip-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1f4d6b;
+}
